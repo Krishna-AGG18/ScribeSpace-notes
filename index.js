@@ -35,7 +35,7 @@ function loadtogrid(){
         str += `
         <div class="col-sm-4 p-3">
                 <label for="note${index+1}" class="fw-bold text-info">📓 Note ${index+1} :</label>
-                <textarea id="note${index}" class="form-control mt-3" rows="5" disabled>${element}</textarea>
+                <textarea id="note${index+1}" class="form-control mt-3" rows="5" disabled>${element}</textarea>
                 <button class="btn btn-sm btn-danger mt-3" id="hatao" onclick="hatao(${index})">Remove</button>
                 <button class="btn btn-sm btn-warning mt-3" id="modify${index}" onclick="modify(${index})">Modify </button>
                 <button class="btn btn-sm btn-success mt-3" id="save${index}" onclick="save(${index})" disabled>Save </button>
